@@ -108,6 +108,7 @@ function Airplane(name) {
   santaFe.fill(4);
   console.log('task 2', santaFe.tank);
 
+
   /*
     TASK 3
       - Write a Baby constructor subclassing Person.
@@ -115,11 +116,21 @@ function Airplane(name) {
       - Besides the methods on Person.prototype, babies have the ability to `.play()`:
           + Should return a string "Playing with x", x being the favorite toy.
   */
- function Baby() {
-   
-  }
+ function Baby(name, age, favoriteToy) {
+   Person.call(this, name, age);
+   this.favoriteToy = favoriteToy;
+  };
  
-  
+  Baby.prototype = Object.create(Person.prototype);
+
+  Baby.prototype.play = function(){
+    return `Playing with ${this.favoriteToy}`;
+  }
+
+  const ellie = new Baby ('Ellie', -4, 'Egg');
+  console.log('Task 3a', ellie);
+  console.log('Task3b', ellie.play());
+
   /* 
     TASK 4
     In your own words explain the four principles for the "this" keyword below:
