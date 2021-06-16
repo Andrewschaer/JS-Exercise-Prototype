@@ -134,10 +134,21 @@ function Airplane(name) {
   /* 
     TASK 4
     In your own words explain the four principles for the "this" keyword below:
-    1. 
-    2. 
-    3. 
-    4. 
+    1. Window Binding:
+
+      #Window binding occurs when using the "this" keyword when there is no additionally given context for what the "this" is referring to, therefore binding "this" at the highest scope level (global scope) to the window, which is an object containing all JS built-in functions, arrays and variable key-value pairs)
+    
+    2. Implicit Binding:
+
+      #Implicit binding occurs when using the "this" keyword in a function that is within an object.  Here we are implying that the "this" is referring to the object and we can therefore use object methods using the "dot" notation. The "this" must be used after the object being referred to is already referenced.
+
+    3. Explicit Binding
+
+      #Explicit binding occurs when using the ".call", ".apply" or ".bind" methods on existing functions that contain "this", in order to override what the "this" keyword points to.
+
+    4. New Binding
+
+      #New binding occurs when using constructor functions, where the "this" keyword is referencing the new object that is created by the constructor function.
   */
   
   
