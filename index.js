@@ -43,9 +43,7 @@ function Airplane(name) {
     
   }
  
- 
-
-  
+// TEST TEST TEST - REMOVE AFTER GITHUB CONNECTION HAS BEEN MADE WITH WITH CODEGRADER
   
   
   
